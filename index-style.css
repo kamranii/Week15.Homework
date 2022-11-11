@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#blogCreation{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    font-family: sans-serif;
+    width: 30vw;
+}
+header{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+header h1{
+    color: #bc870b;
+    text-align: center;
+    font-size: 2rem;
+}
+main {
+    width: 100%;
+}
+form{
+    width: 100%;   
+}
+form > label{
+    display: block;
+    margin: 1vh 0;
+    font-size: 1.2rem;
+}
+form > input{
+    display: block;
+    height: 2.5vh;
+    width: 100%;
+    padding: 2%;
+    font-size: .9rem;
+
+}
+form > input:focus{
+    outline: none;
+}
+form > textarea:focus{
+    outline: none;
+}
+#title:focus{
+    background-color: #e7f0fe;
+}
+#save{
+    display: inline-block;
+    margin: 0 auto;
+}
+form div{
+    margin: 1vh 0;
+    text-align: center;
+    color: red;
+    font-size: .75rem;
+    display: none;
+} 
+#blogBodyArea{
+    width: 100%;
+    padding: 2%;
+}
+#save{
+    display: block;
+    margin-top: 1vh;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    width: 60px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: white;
+    background-color: #b7860b;
+}
+/* this didn't  work*/
+@media only screen and (max-width: 800px) {
+    #blogCreation{
+        width: 80vw;
+    }  
+} 

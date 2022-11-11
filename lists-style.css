@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#unorderedListModification{
+   margin-top: 30vh;
+   font-size: 2rem;
+}
+#unorderedListModification ul{
+    margin-bottom: 5vh;
+}

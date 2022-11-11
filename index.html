@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <section id="blogCreation">
+    <header id="blogHeader">
+        <h1>Add a new blog</h1>
+    </header>
+
+    <main>
+        
+            <form id="mainForm">
+
+                <label for="title">Blog title:</label>
+                <input type="text" id="title" name="title" >
+                <label for="body">Blog body:</label>
+                <textarea name="blogBody" id="blogBodyArea" rows="3" oninput="validateBlogBody()"></textarea>
+                <div id="bodyValidationMessage" class="msg">Text has to be between 2 and 20 characters long</div>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" oninput="validateAuthor()">
+                <div id="authorValidationMessage">The author's name is required</div>
+                <label for="number">Number:</label>
+                <input type="text" id="number" name="email" oninput="numberValidate()">
+                <div id="numberValidationMessage">A number is required</div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" oninput="validateEmail()">
+                <div id="emailValidationMessage">Invalid email address</div>
+                <input type="submit" value="Save" id="save">
+            </form>
+    </main>
+    </section>
+
+    <script src="index-script.js"></script>
+</body>
+</html>
